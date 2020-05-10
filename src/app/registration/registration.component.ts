@@ -6,7 +6,7 @@ import { NgForm } from '@angular/forms';
   templateUrl: './registration.component.html'
 })
 export class RegistrationComponent {
-  @ViewChild('regForm', { read: true, static: true }) regForm: NgForm;
+  @ViewChild('regForm', { read: false, static: false }) regForm: NgForm;
 
   data = {
     subjectName: '',
