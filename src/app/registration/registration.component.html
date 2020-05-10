@@ -1,0 +1,16 @@
+<form class="form-container" (ngSubmit)="onSubmit()" #regForm="ngForm" novalidate>
+  <label for="subjectName">
+    Subject Name:
+    <input type="text" [(ngModel)]="data.subjectName" name="subjectName" minlength="3" required>
+  </label>
+  <label for="dob">
+    DOB:
+    <input type="date" [(ngModel)]="data.dob" name="dob" required>
+  </label>
+  <label for="emailId">
+    Email Id:
+    <input type="email" [(ngModel)]="data.emailId" name="emailId" email required>
+  </label>
+  <div class="error-msg">{{errorMsg}}</div>
+  <button type="submit">Submit</button>
+</form>
